@@ -1,0 +1,16 @@
+package game;
+
+public class MainMenuApp {
+	MainMenu mM = new MainMenu();
+
+	public static void main(String[] args) {
+		MainMenuApp Mga = new MainMenuApp();
+		Mga.run();
+	}
+	
+	public void run() {
+		mM.mainMenu();
+	}
+	
+
+}

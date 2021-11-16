@@ -1,0 +1,47 @@
+package art;
+
+public class Art {
+
+	public void island() {
+		System.out.println("wwwwwwwwwwEEEwwmwwwwwwEEEwwEEEEEEEEPhPhkXXkhPEEwmmmwwwwmwmSSaZaoaaaZaaSSaoyyyyyj\n"
+				+ "wwwEEEEEEEEEEEEEEEwwEEEEEEEEEEEEEEEPPhhkkXXkhhPEEwmEEEEwwmmSSSZaaaaaaoo5yyyyyyyy\n"
+				+ "EEPPEPPPPPhPPPhPPEPEPPPPhhhhhPPhPhhhkkkXXXXXkXkkhPEhPPEEwwwwmwmSSSSZZZaaaoo55oyy\n"
+				+ "hhkkkkkkkkkkkhkkkhhkkXXXXXXXUUXXkXUUUXXUUXXXXXXXXkkkhPPPhEEEPEwwmmmSSSSSSSSZSESo\n"
+				+ "kkkXUUXUUUUXXXXXXXXXXXUUXUUU666UUUU6666666UUUUUUUUXXXkkkkkkkhhkPEEEwwmmmmmSSmwEm\n"
+				+ "XXUU6666U6UUUUUU6UUUU66666666666666666666666666U6UUUUUUUUUUUXXXkhPhhEEEEEEEEEEww\n"
+				+ "UUU6Aqqqqq66666AKqq6666AAAAqqqqqKKKqqqKbKqAAAAAAA6666666UUUUUUUUUUUXXkkkkkkkkkkk\n"
+				+ "bU6qKKKqKKqqAAAqqqqqqqqqqqqqKKKKKKKKKKKKKKKKKKKKKqqqqqqqqqqAAqAA6666UUUUUUUUUUUU\n"
+				+ "UUAqqqqqKKqKqKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKbbKbKKKKKKKKKKKKKKKKKKKKqqqqAAA66666\n"
+				+ "666qqDbKKKKKKKKKKKKKKKKdDDDDDDdDddDddddddddddddddddddddddbbbbbbbKKKKKKKKKKqqqqqq\n"
+				+ "qqqDgQbKKKbbbbbddddddddddDDDdDDddDddDddDDDDDDDDDDDDDDDDDDDDDDdddddddddbdbbddddDD\n"
+				+ "KKd&QgdddDDDDDDDDDDDDDDDddddDDDDDDDDDDDDDDDDDRRRDDDDDDDDDDDDDDDDDRRRRR8BBB#BQQQQ\n"
+				+ "%%8B8gRDDDDDDDDDDDDDDDDDDDDDDRDRRRRRR%%gW888NNW%RRRRRDDDRDRDDDDDDDDDDDDDDDDRR%gg\n"
+				+ "QQQQQQQ#g%%RR%RR%%8NW%%%%gW88gggWg%g8NWUKqX5dDUU%%%%%R%%%gWW%%88gggWg%%%%R%%%RRD\n"
+				+ "QQ&8WW8N##N8WN88g%gggg%ggggggW88NNWbDh^'~_;,~~;;\\AgggWWWWWWW88B&#&QQQQQQN%g8g%g%\n"
+				+ "Q8@@QQNgW8W8NNNN8WWWWggggggRPXDDJ+!,,,.',~:,'.'',~7oD8WR888888NNNQ@QNBQQQ8B#WgWg\n"
+				+ "QQ@QQQQQ@@QQQB8888888NNNNN6;,,:~,,,.,,,:~:,.`.`,'','~*7;wBQQQQQQ@@QQQQQQQQQQQQQQ\n"
+				+ "Q@@@QQQ@@QQ@@QQQQQQQAny{5i,',~+^!;;;;;,,,,,,_`''.'''``~,~=jRQ@@@@@@QQQQQQQQQQQQQ\n"
+				+ "QQ@QQQQ@Q#QQQ@@B&BRKir~~;~;r;;;~;^!;^!,:,,:'',_,,,'',, `:;;;<sDQ@@QQQQQQQQQQQQ@@\n"
+				+ "@QQQQQ@@QQQB@Qz<**^^^~;!!~;;;;^;;~,,,,_'~!+;;:,~~,,'''_~~:;~:~+yDQQQQQ@@QQBQQ@@Q\n"
+				+ "@@Q@Q@QQQQQNPr`',~;~:~:!;;;~:._,_:,''~~',~_~,'_~~:_:,;~,~~:,_~~,,?NQQQ@QBQQQQQQQ\n"
+				+ "QQQQQQBBBfi;;'`_;;^~:~;;;;~,'_,:,:~;~_''```..`',''~,`~~,~;,,'','.'6B#QQN#BQ&QBQ#\n"
+				+ "QQQQQ6z<<~,;:_,'_,,',''~~,..,,.`````.```.```,.`.`~;,~__'_,.,'.''''`;d%%gW%RRDDDD\n"
+				+ "B##BBK~,,',,,,'`'`''`'~_;.  ``` ``         ``   ``'`_'` .`  ``` '`..`*ddbddbbbKq\n"
+				+ "R%g%%%:'`''`:!+i*<nmy#Dy~` `       ``''```           `          ``'~|7A6qqqK6q6U\n"
+				+ "UUUP}jiL;':\\WqqkoEjsn7yyyzc^!^~,!^,~~~~^ccL;~~~~,,'.,,;;,:;~,.,.,,,~|fjUfsI{yyyy\n"
+				+ "bbddb6m5fzyjtfnTv\\\\7cci|?|i**=<><**?>=+r<=r^=^+r^==<*<*<+++^^^^==>vzJJsxtztJxYI{\n"
+				+ "KbDDdKkkwyjfu7|Lc77vcz7\\|*>rr+>+==++==^^^+^!;!!r+=<**|||LLiiLLLivvtJzJzzz7TcvzzJ\n"
+				+ "KKKDK6kPmyyyys7zzxsJ7z77vL***|||**<<<<=+++=!^+^r^=*||||L||LL\\\\v77zn{}j}IJzzzzI}f\n"
+				+ "kPkUkPwEmyyyjnzzJtszzzzzz7\\\\i\\TiiiiLiL?||||*<**||LiLLLL|L\\ivvc7tYy5y{}f}jn}YJzt{\n"
+				+ "f{yoy5yoy}fYYJzzztsJ7777z77\\iL\\LLLL|||*?*L|=>*<<*|LLLiiiiciiiTvzf}o5aaaayjfy}fy}\n"
+				+ "okkUaojoaj}fusJzzsYJ7z777v\\L?LiiiL||*||<=<=+>>**<*?|?||Li\\\\v\\T7Jffj5oZSaZyyjffyy\n"
+				+ "awwamSyyff{}uJ77Jzzz77z777\\LLiLL\\L?L|?**+*<^^>=<*|?|*ii?|i\\c\\\\zJuYjaZoyoa5o5yyof\n"
+				+ "Sayf}ouyj{YsnJz77zz77vv77iic||||*|LL|?*>?**<^=+**?**?*||iLiT\\T\\z}}y5yyyjyjf}f{fY\n"
+				+ "ujyIn}}yusIJJz7zz7z7z77vzvi\\i\\Li||**??**<<**<*<?|?|||TLLiic\\7777JIj}f}txJnuy{ffI\n"
+				+ "Jf}y}zx{tztnz777z77777z77iT\\LL\\viiiii\\iiiiL||?**??|LLLii\\icL\\i\\zIIjjn{jfyjyjyfYy\n"
+				+ "77Lic7zzz7z7i\\Tv7v7vv7v\\i\\i7\\iivv\\v\\ciii|Li|L<<<>?|||L|iLLLLiiT77IsIJtzYtJzzcvzJ\n"
+				+ "ciLL7ziTicv\\|||Li||||L|LiT777zz7vz777\\v\\ivLiii|?||L|||L|LLLLLii77zs}YY}YxtIYJzzI\n"
+				+ "L77z\\||iL*?L|?LLiiiL|iL\\c\\cv777cc777777vvcTi\\i\\|TL\\\\LiiL|L|Li\\i77Tcv7zz77Jz777\\7\n"
+				+ "zzxz7TTJ7c\\77v77777z7cc\\c\\cTcTcc\\7cv7T77\\cTvccc\\cc\\ciiiLii\\iiL\\Lc7zxJtJ7zz7777JI");
+	}
+}

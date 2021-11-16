@@ -1,0 +1,265 @@
+package levels;
+
+import java.util.Scanner;
+
+import art.Art;
+import user.*;
+
+public class Setup {
+	Art art = new Art();
+	User user = new User();
+	Scanner kb = new Scanner(System.in);
+
+	
+	public void setup() {
+		System.out.println("\nYou Wake Up On The Beach Shore...");
+		kb.nextLine();
+		System.out.println("You Look Up And See A Small Shack Right On The Beach...");
+		kb.nextLine();		
+		art.hut();
+		kb.nextLine();		
+		System.out.println("Hey Are You Okay...");
+		kb.nextLine();		
+		System.out.println("What's Your Name?\n");
+		user.setName(kb.nextLine());
+		while (user.getName().isEmpty() || user.getName().equalsIgnoreCase(" ")) {
+				System.out.println("Are You Okay... \n\nI Think You Might Have Hurt You Head, \n\nPlease Enter An Actual Name... \n\nWhat's Your Name Again? \n");
+				user.setName(kb.nextLine());
+		}
+		
+		//                              GOT NAME
+		
+		System.out.println("\nOh... I See So Your Name Is " + user.getName() + "...");
+		kb.nextLine();
+		System.out.println("Let's Check Out Your Stats " + user.getName() + "...\n");
+		kb.nextLine();
+		stats();
+		System.out.println("Cool Huh...");
+		kb.nextLine();
+		System.out.println("Oh! By The Way!");
+		System.out.println("\nI'm " + user.getaI() + "...");
+		kb.nextLine();
+		art.kealii();
+		System.out.println("\nNice To Meet You!");
+		kb.nextLine();
+		System.out.println("If We're Going To Be Stuck On This Island Together, \n\nIt's Best We Get To Know Each Other Right?");
+		
+		System.out.println("So Tell Me " + user.getName() + "..." + kb.nextLine() + "\n\nAre You A... \n\n 1) Male \n 2) Female \n 3) Other \n");
+		int genderChoice = kb.nextInt();
+		kb.nextLine();
+		while(genderChoice > 3) {
+			System.out.println("\nOops I Know That's Not A Gender Option,\n\nLet Me Try Again\n");
+			System.out.println("So Tell Me " + user.getName() + "... \n\nAre You A... \n\n 1) Male \n 2) Female \n 3) Other \n");
+			genderChoice = kb.nextInt();
+			kb.nextLine();
+		}
+		if(genderChoice == 1) {
+			user.setGender("Male");
+			}
+			else if(genderChoice == 2) {
+				user.setGender("Female");
+
+			}
+			else if(genderChoice == 3) {
+				user.setGender("Other");
+		}
+		System.out.println("\nOh... So You Associate With " + user.getGender() + "s...");
+		kb.nextLine();
+
+		//                        	    GOT GENDER
+		
+		System.out.println("Cool");
+		kb.nextLine();
+		
+		System.out.println("Now...");
+		kb.nextLine();
+		
+		System.out.println("How Old Are You " + user.getName() + "?...\n");
+		user.setAge(kb.nextInt());
+		kb.nextLine();
+		System.out.println("\nHmm, Are You Sure You're " + user.getAge() + "...");
+		kb.nextLine();		
+		System.out.println("Okay, \n\nWhatever You Say " + user.getName() + "...");
+		kb.nextLine();
+		
+		//								Choose Path
+		System.out.println("Now...");
+		kb.nextLine();
+		System.out.println("Do You Like Using... \n\n1) Muscles \n\nOr \n\n2) Magic\n");
+		int path = kb.nextInt();
+		while(path > 2) {
+			System.out.println("\nI've Got To Stop Doing This...\n\n");
+			System.out.println("Do You Like Using Your... \n\n1) Muscles \n\nOr \n\n2) Magic\n");
+			path = kb.nextInt();
+			kb.nextLine();
+		}
+		if(path == 1) {
+			System.out.println("\nYou Feel Your Muscles Grow Larger...");
+			kb.nextLine();
+			user.setHealth(user.getHealth() + 20);
+			System.out.println("\n" + user.getName()+" Gained 20 More Health\n");
+			System.out.println(user.getName() + " Has " + user.getHealth() + " HP");
+			kb.nextLine();
+			user.setAttackStrength(user.getAttackStrength() + 2);
+			System.out.println(user.getName() + " Gained 2 More Attack Strength\n");
+			System.out.println(user.getName() + " Has " + user.getAttackStrength() + " Atk Str");
+			kb.nextLine();
+			user.setMana(user.getMana() - 30);
+			System.out.println(user.getName() + " Lost 30 Mana\n");
+			System.out.println(user.getName() + " Has " +  user.getMana() + " MP");
+			kb.nextLine();
+			System.out.println("You're A Fighter " + user.getName() + "...");
+			kb.nextLine();
+			
+		}
+		if(path == 2) {
+			System.out.println("\nYou Feel Your Fingers Tingling...\n");
+			user.setSpell("Tesla Spark!");
+			kb.nextLine();
+			kb.nextLine();
+			System.out.println(user.getName() + " Learned The Spell " + user.getSpell());
+			kb.nextLine();
+			user.setHealth(user.getHealth() - 20);
+			System.out.println(user.getName() + " Lost 20 Health\n");
+			System.out.println(user.getName() + " Has " + user.getHealth() + " HP");
+			kb.nextLine();
+			user.setSpellStrength(user.getSpellStrength() + 30);
+			System.out.println(user.getName() + " Gained 30 Spell Strength\n");
+			System.out.println(user.getName() + " Has " + user.getSpellStrength() + " Spell Str");
+			kb.nextLine();
+			user.setMana(user.getMana() + 30);
+			System.out.println(user.getName() + " Gained 30 More Mana\n");
+			System.out.println(user.getName() + " Has " + user.getMana() + " MP");
+			kb.nextLine();
+			System.out.println("You're A Wizard, \n\nHarry...");
+			kb.nextLine();
+			System.out.println("Oops...");
+			kb.nextLine();
+			System.out.println("Sorry " + user.getName() +  "...\n");
+			kb.nextLine();
+			System.out.println("YOU'RE A Wizard,\n\n" + user.getName() + "...");
+			kb.nextLine();
+			
+			
+		}
+		
+		//                        	    GOT AGE
+		
+		System.out.println("Wow That Was Tiring, \n\nI Think That's Enough Getting To Know Each Other For Now...");
+		kb.nextLine();		
+		System.out.println("I'll Leave You To Rest Til Morning Before We Head Out,\n\nGoodnight!");
+		kb.nextLine();
+		System.out.println("1) Say Goodnight To " + user.getaI() +"...\n2) Say Nothing\n");
+		int userChoice = kb.nextInt();
+		kb.nextLine();
+		
+		
+		// 								GOOD WAY OF USING WHILE LOOP FOR BAD CHOICES FOR NUMBERS 
+		while(userChoice > 2) {
+			System.out.println("\nSomehow You Think You Were Supposed To Select A Choice From The Numbers Listed...");
+			System.out.println("\n1) Say Goodnight To " + user.getaI() +"...\n2) Say Nothing");
+			userChoice = kb.nextInt();
+			kb.nextLine();
+		}
+		if(userChoice == 1) {
+		System.out.println("\n" + user.getaI() + " Smiles And Disappear Silently To His Room Closing The Door Behind Him...");
+		userChoice = 1;
+		}
+		else if(userChoice == 2) {
+			System.out.println("\n" + user.getaI() + " Looks At You Puzzled, \n\nThen Sulks To His Room Closing The Door...");
+			userChoice = 2;
+		}
+		art.door();
+		kb.nextLine();
+		System.out.println("                                ");		
+		System.out.println("                                ");		
+		System.out.println("                                ");		
+		System.out.println("                                ");		
+		System.out.println("                                ");		
+		System.out.println("                     '          ");
+		System.out.println("            *          .        ");
+		System.out.println("                   *        '   ");
+		System.out.println("              *                *");
+		System.out.println("                                ");
+		System.out.println("                                ");
+		System.out.println("          That Night " + user.getName() + " Slept...  ");
+		System.out.println("\n       And Dreamt Of An Ancient Past...  ");
+		System.out.println("\n    That Somehow Never Felt All That Distant...  ");
+		System.out.println("                                ");
+		System.out.println("                                ");
+		System.out.println("   *    *                       ");
+		System.out.println("           *                    ");
+		System.out.println("                *               ");
+		System.out.println("                       *        ");
+		System.out.println("               *                ");
+		System.out.println("                     *          ");
+		System.out.println("                                ");		
+		System.out.println("                                ");		
+		stats();
+	}
+	
+	
+	public void intro() {
+		
+		kb.nextLine();		
+		System.out.println("                        ...                        ");
+		kb.nextLine();		
+		System.out.println("                        ....                        ");
+		kb.nextLine();		
+		System.out.println("                        .......                        ");
+		kb.nextLine();		
+		System.out.println(user.getName().toUpperCase() + " WAKE UP!!!!!!!!!!!!!!!!!!!!");
+		kb.nextLine();
+		System.out.println("The Volcanos Exploding! We Need To Leave NOW!!!!");
+		
+		System.out.println("\n1) Leave With Keali`i..." + "\n2) Stay\n");
+		int userChoice = kb.nextInt();
+		kb.nextLine();
+		
+		while(userChoice > 2) {
+			System.out.println("\nSomehow You Think You Were Supposed To Select A Choice From The Numbers Listed...");
+			System.out.println("\n1) Leave With Keali`i..." + "\n2) Stay\n");
+			userChoice = kb.nextInt();
+			kb.nextLine();
+		}
+			if(userChoice == 1) {
+			System.out.println("\n" + user.getaI() + " Grabs You By The Hand And Rushes You Out The Door...");
+			kb.nextLine();
+			userChoice = 1;
+			}
+				else if(userChoice == 2) {
+				System.out.println("\nYou Hesitate For Just A Moment And See Something Shining Behind The Open Door...");
+				art.shiningDoor();
+				kb.nextLine();
+				System.out.println("You Look Behind The Door And Find A Silver Sword!");
+				user.setWeapon("Silver Sword!");
+				user.setWeaponStrength(user.getWeaponStrength() + 3);
+				user.setTotalAttack();
+				kb.nextLine();
+				System.out.println("You Now Have " + user.getWeapon() + " With A Weapon Strength Of "  + user.getWeaponStrength() + "!\n\n"
+						+ "With A Total Attack Of " + user.getTotalAttack());
+				kb.nextLine();
+				userChoice = 2;
+				}
+			System.out.println("Lets Get Out Of Here " + user.getaI() + "!!!");
+			kb.nextLine();
+			art.exitDoor();
+			stats();
+	}
+	public void stats() {
+		System.out.println("                                ");		
+		System.out.println("                                ");		
+		System.out.println("            "+"  Name: "+user.getName()+"                   ");		
+		System.out.println("      	    HP: "+user.getHealth()+"                   ");		
+		System.out.println("       	    MP: "+user.getMana()+"                   ");		
+		System.out.println("     	    Spell: "+user.getSpell()+"                   ");		
+		System.out.println("     	    Spell Str: "+user.getSpellStrength()+"                   ");		
+		System.out.println("      	    Weapon: "+user.getWeapon()+"                   ");		
+		System.out.println("     	    Weapon Str: "+user.getWeaponStrength()+"                   ");		
+		System.out.println("     	    Attack Str: "+user.getAttackStrength()+"                   ");		
+		System.out.println("     	    Total Atk: "+user.getTotalAttack()+"                   ");		
+		System.out.println("                                ");	
+		System.out.println("                                ");	
+		kb.nextLine();
+	}
+}

@@ -1,0 +1,20 @@
+package game;
+
+import java.util.Scanner;
+
+public class MainGameApp {
+	Scanner kb = new Scanner(System.in);
+
+	public static void main(String[] args) {
+		MainGameApp Mga = new MainGameApp();
+		Mga.run();
+	}
+	
+	public void run() {
+		mainMenu();
+	}
+	
+	public void mainMenu() {
+		
+	}
+}

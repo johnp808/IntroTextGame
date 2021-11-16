@@ -1,0 +1,86 @@
+package game;
+
+import java.util.Scanner;
+import game.*;
+import levels.Setup;
+import user.User;
+
+public class MainMenu {
+	Scanner kb = new Scanner(System.in);
+	Setup s = new Setup();
+	User u = new User();
+	boolean quit = false;
+	
+	public void userInfo() {
+		System.out.println("                                ");		
+		System.out.println("                                ");		
+		System.out.println("      			   Name: "+u.getName()+"                   ");		
+		System.out.println("      			   Health: "+u.getHealth()+"                   ");		
+		System.out.println("     			   Mana: "+u.getMana()+"                   ");		
+		System.out.println("     			   Mana: "+u.getSpell()+"                   ");		
+		System.out.println("     			   Mana: "+u.getSpellStrength()+"                   ");		
+		System.out.println("     			   Attack Str: "+u.getAttackStrength()+"                   ");		
+		System.out.println("      	   		   Weapon: "+u.getWeapon()+"                   ");		
+		System.out.println("     			   Weapon Str: "+u.getWeaponStrength()+"                   ");		
+		System.out.println("     			   Total Atk: "+u.getTotalAttack()+"                   ");		
+		System.out.println("                                ");	
+		System.out.println("                                ");	
+	}
+
+	public void mainMenu() {
+
+		while (!quit) {
+
+			System.out.println("***************************************************");
+			System.out.println("*                                                 *");
+			System.out.println("*      Please Select From One Of The Choices      *");
+			System.out.println("*                                                 *");
+			System.out.println("* 1.          * Start Your Adventure *            *");
+			System.out.println("*                                                 *");
+			System.out.println("* 2.            * Check High Score *              *");
+			System.out.println("*                                                 *");
+			System.out.println("* 3.                 * Credits *                  *");
+			System.out.println("*                                                 *");
+			System.out.println("* 4.                  * Quit *                    *");
+			System.out.println("*                                                 *");
+			System.out.println("***************************************************");
+			System.out.println("\n");
+
+			System.out.println("              Please Select A Choice: \n");
+			int userMenuChoice = kb.nextInt();
+			kb.nextLine();
+//	-------------------------------------------------------------------------------------------------
+			if (userMenuChoice == 1) {
+				run();
+			} else if (userMenuChoice == 2) {
+				System.out.println("\n");
+				highScore();
+			} else if (userMenuChoice == 3) {
+				System.out.println("\n");
+				credits();
+			} else if (userMenuChoice == 4) {
+				System.out.println("\n");
+				quit = true;
+				System.out.println("GoodBye!");
+			}
+		}
+		kb.close();
+	}
+
+	public void run() {
+		s.setup();
+		s.intro();
+		quit = true;
+	}
+
+	public void highScore() {
+		System.out.println("              No High Score Yet...\n");
+		kb.nextLine();
+	}
+
+	public void credits() {
+		System.out.println("           Created By: UzidontBrick...\n");
+		kb.nextLine();
+	}
+
+}

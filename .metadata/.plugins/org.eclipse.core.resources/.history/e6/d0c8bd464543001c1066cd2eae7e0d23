@@ -1,0 +1,19 @@
+package game;
+
+import menu.MainMenu;
+
+public class MainGameApp {
+	MainGame mG = new MainGame();
+	MainMenu mM = new MainMenu();
+
+	public static void main(String[] args) {
+		MainGameApp Mga = new MainGameApp();
+		Mga.run();
+	}
+	
+	public void run() {
+		mM.mainMenu();
+	}
+	
+
+}

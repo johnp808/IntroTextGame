@@ -1,0 +1,14 @@
+package art;
+
+public class Classes {
+
+	//							Bright Cyan Text
+	 public static final String BFIGHTER = "\033[0;96m" + "FIGHTER" + "\033[0m";
+	//							Cyan Text 
+	 public static final String FIGHTER = "\033[0;36m" + "FIGHTER" + "\033[0m";
+	 
+	//							Bright Purple Text
+	 public static final String BWIZARD = "\033[0;95m" + "WIZARD" + "\033[0m";
+	//							Purple Text 
+	 public static final String WIZARD = "\033[1;35m" + "WIZARD" + "\033[0m";
+}

@@ -1,0 +1,11 @@
+package levels;
+
+import java.util.Scanner;
+
+public class LevelOne {
+	Scanner kb = new Scanner(System.in);
+
+	public void levelOne() {
+		System.out.println("Sup Faka!");
+	}
+}

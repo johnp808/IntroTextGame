@@ -1,0 +1,65 @@
+package game;
+
+import java.util.Scanner;
+import levels.*;
+
+public class MainGame {
+
+	Scanner kb = new Scanner(System.in);
+	LevelOne lO = new LevelOne();
+	public void mainMenu() {
+
+		boolean quit = false;
+
+		while (!quit) {
+
+			System.out.println("***************************************************");
+			System.out.println("***************************************************");
+			System.out.println("***************************************************");
+			System.out.println("***************************************************");
+			System.out.println("*                                                 *");
+			System.out.println("*      Please Select From One Of The Choices      *");
+			System.out.println("*                                                 *");
+			System.out.println("* 1.          * Start Your Adventure *            *");
+			System.out.println("*                                                 *");
+			System.out.println("* 2.            * Check High Score *              *");
+			System.out.println("*                                                 *");
+			System.out.println("* 3.                 * Credits *                  *");
+			System.out.println("*                                                 *");
+			System.out.println("* 4.                  * Quit *                    *");
+			System.out.println("*                                                 *");
+			System.out.println("***************************************************");
+			System.out.println("***************************************************");
+			System.out.println("***************************************************");
+			System.out.println("***************************************************");
+
+			System.out.println("Select A Choice: ");
+			int userMenuChoice = kb.nextInt();
+			kb.nextLine();
+//	-------------------------------------------------------------------------------------------------
+			if (userMenuChoice == 1) {
+				run();
+			}
+			else if (userMenuChoice == 2) {
+				highScore();
+			} 
+			else if (userMenuChoice == 3) {
+				credits();
+			}
+			else if (userMenuChoice == 4) {
+				quit = true;
+				System.out.println("GoodBye!");
+			}
+		}
+		kb.close();
+	}
+	public void run() {
+		lO.levelOne();
+	}
+	public void highScore() {
+
+	}
+	public void credits() {
+	
+	}
+}

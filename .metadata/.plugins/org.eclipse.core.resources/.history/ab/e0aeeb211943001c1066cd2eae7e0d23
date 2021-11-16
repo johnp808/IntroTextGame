@@ -1,0 +1,32 @@
+package levels;
+
+import java.util.Scanner;
+
+public class Setup {
+	Scanner kb = new Scanner(System.in);
+	String name;
+	String gender;
+
+	public void setup() {
+		System.out.println("Welcome To Your New Z-Island Paradise Text Based Adventure!");
+		System.out.println("First I Need To Get To Know You, What's Your Name? \n");
+		name = kb.nextLine();
+		
+		System.out.println("\nOh... I See So Your Name Is " + name + "...\n");
+		System.out.println("Nice To Meet You " + name + "! My Name Is Naz! \n");
+		System.out.println("We Are Going To Be Stuck Together For A While So It's Best We Get To Know Each Other Alright? \n");
+		
+		System.out.println("So Tell Me " + name + "... Are You A \n 1) Male \n 2) Female \n 3) Other \n");
+		int genderChoice = kb.nextInt();
+		if(genderChoice == 1) {
+			gender = "Male";
+		}
+		else if(genderChoice == 2) {
+			gender = "Female";
+		}
+		else if(genderChoice == 3) {
+			gender = "Other";
+		}
+		System.out.println("\nOh... So You Are A " + gender + "... Awesome! Thanks For Answering! \n");
+	}
+}

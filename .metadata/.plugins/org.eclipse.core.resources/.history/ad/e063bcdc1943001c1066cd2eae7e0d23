@@ -1,0 +1,17 @@
+package game;
+import levels.*;
+
+public class MainGameApp {
+	MainGame Mg = new MainGame();
+
+	public static void main(String[] args) {
+		MainGameApp Mga = new MainGameApp();
+		Mga.run();
+	}
+	
+	public void run() {
+		Mg.mainMenu();
+	}
+	
+
+}

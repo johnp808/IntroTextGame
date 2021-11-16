@@ -1,0 +1,54 @@
+package menu;
+
+import java.util.Scanner;
+import game.*;
+
+public class MainMenu {
+
+	Scanner kb = new Scanner(System.in);
+	MainGame mG = new MainGame();
+	boolean quit = false;
+	
+public void mainMenu() {
+
+		while (!quit) {
+
+			System.out.println("***************************************************");
+			System.out.println("*                                                 *");
+			System.out.println("*      Please Select From One Of The Choices      *");
+			System.out.println("*                                                 *");
+			System.out.println("* 1.          * Start Your Adventure *            *");
+			System.out.println("*                                                 *");
+			System.out.println("* 2.            * Check High Score *              *");
+			System.out.println("*                                                 *");
+			System.out.println("* 3.                 * Credits *                  *");
+			System.out.println("*                                                 *");
+			System.out.println("* 4.                  * Quit *                    *");
+			System.out.println("*                                                 *");
+			System.out.println("***************************************************");
+			System.out.println("\n");
+
+			System.out.println("              Please Select A Choice: \n");
+			int userMenuChoice = kb.nextInt();
+			kb.nextLine();
+//	-------------------------------------------------------------------------------------------------
+			if (userMenuChoice == 1) {
+				mG.run();
+			}
+			else if (userMenuChoice == 2) {
+				System.out.println("\n");
+				mG.highScore();
+			} 
+			else if (userMenuChoice == 3) {
+				System.out.println("\n");
+				mG.credits();
+			}
+			else if (userMenuChoice == 4) {
+				System.out.println("\n");
+				quit = true;
+				System.out.println("GoodBye!");
+			}
+		}
+		kb.close();
+	}
+}

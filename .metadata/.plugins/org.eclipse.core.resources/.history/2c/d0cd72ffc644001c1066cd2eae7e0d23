@@ -1,0 +1,10 @@
+package levels;
+
+import java.util.Scanner;
+
+import art.*;
+import user.*;
+
+public class AllLevels {
+	
+}

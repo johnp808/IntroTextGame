@@ -1,0 +1,18 @@
+package user;
+
+public class User {
+
+	String name;
+	String gender;
+	int age;
+	String aI = "Keali`i";
+	int health = 100; 
+	String weapon = "Bare Hands";
+	int attackStrength = 1;
+	String spell = "None";
+	int mana = 100;
+	int spellStrength = 0;
+	int spellConsumption = 0;
+	
+	
+}

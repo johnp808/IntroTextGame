@@ -1,0 +1,20 @@
+package levels;
+
+import java.util.Scanner;
+
+import art.Art;
+import art.Classes;
+import art.Color;
+import game.*;
+import user.User;
+
+public class AllLevels {
+	Art art = new Art();
+	User user = new User();
+	Color color = new Color();
+	Setup s = new Setup();
+	Intro i = new Intro();
+	Classes classes = new Classes();
+	Scanner kb = new Scanner(System.in);
+	
+}
