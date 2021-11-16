@@ -1,6 +1,7 @@
 # IntroTextGame
 
 ###Description###
+
 I wanted to create my own text based game as I was an avid fan of them growing up.
 I have created a setup and very small intro for it. The game is based on a player waking up on the shore of a beach. Run from eclipse or spring tool suite, etc.
 
